@@ -27,7 +27,7 @@ namespace TestAppTest
             var result = serializer.Deserialize<GeoDBGetCountriesResponse>(response);
             Assert.IsNotNull(result, "Deserialized output cannot be null");
             Assert.IsNotNull(result.Data, "'data' array in the response cannot be null");
-            Assert.IsTrue(result.Data.Any(p => p.Name == "Sri Lanka"), "Sri Lanka is not present in the response");
+            Assert.IsTrue(result.Data.Any(p => p.Name == "Sri Lanka"), "Sri Lanka is not presented in the response");
         }
 
         public class GeoDBGetCountriesResponse
